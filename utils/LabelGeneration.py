@@ -37,9 +37,6 @@ class LabelGeneration:
         for p in self.teacher.parameters():
             p.requires_grad_(False)
 
-    # -------------------------------------------------
-    # Label generation methods (add more freely)
-    # -------------------------------------------------
 
     @torch.no_grad()
     def teacher_labels(self, data):
